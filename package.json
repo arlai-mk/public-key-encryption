@@ -1,0 +1,22 @@
+{
+  "name": "cosmjs-encrypt",
+  "version": "1.0.0",
+  "description": "Experiment with encryption using secp256k1 / ECDH / HKDF-SHA256.",
+  "scripts": {
+    "encrypt_v1": "ts-node encrypt_v1.ts",
+    "encrypt_v2": "ts-node encrypt_v2.ts",
+    "generate": "ts-node generate_mnemonics.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "arlai-mk",
+  "license": "MIT",
+  "devDependencies": {
+    "ts-node": "10.7.0"
+  },
+  "dependencies": {
+    "@cosmjs/stargate": "0.28.2",
+    "eciesjs": "0.3.16",
+    "@noble/secp256k1": "1.7.0",
+    "micro-aes-gcm": "0.3.1"
+  }
+}
