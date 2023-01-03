@@ -5,6 +5,9 @@
   "scripts": {
     "encrypt_v1": "ts-node encrypt_v1.ts",
     "encrypt_v2": "ts-node encrypt_v2.ts",
+    "encrypt_v3": "ts-node encrypt_v3.ts",
+    "bob_send_to_alice": "ts-node bob_send_to_alice.ts",
+    "alice_send_to_bob": "ts-node alice_send_to_bob.ts",
     "generate": "ts-node generate_mnemonics.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

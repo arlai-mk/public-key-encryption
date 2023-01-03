@@ -30,3 +30,12 @@ export const convertMnemonicToPublicKey = async (mnemonic: string): Promise<Uint
 
     return account.pubkey
 }
+
+export const convertMnemonicToPrivateKey = async (mnemonic: string): Promise<Uint8Array> => {
+    const mnemonicChecked = new crypto_1.EnglishMnemonic(mnemonic);
+    const seed = await crypto_1.Bip39.mnemonicToSeed(mnemonicChecked, defaultOptions.bip39Password);
+
+    const { privkey } = crypto_1.Slip10.derivePath(crypto_1.Slip10Curve.Secp256k1, seed, defaultOptions.hdPath);
+
+    return privkey
+}
