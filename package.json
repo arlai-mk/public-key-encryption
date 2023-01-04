@@ -9,7 +9,7 @@
     "bob_send_to_alice": "ts-node bob_send_to_alice.ts",
     "alice_send_to_bob": "ts-node alice_send_to_bob.ts",
     "generate": "ts-node generate_mnemonics.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ts-node tests.ts"
   },
   "author": "arlai-mk",
   "license": "MIT",

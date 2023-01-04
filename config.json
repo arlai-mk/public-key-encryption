@@ -1,3 +1,4 @@
 {
-    "rpc": "rpc.sentry-01.theta-testnet.polypore.xyz:26657"
+    "rpc": "rpc.sentry-01.theta-testnet.polypore.xyz:26657",
+    "func_retrieve_pubkey": "getPublicKeyFromAccount"
 }
